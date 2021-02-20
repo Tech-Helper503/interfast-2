@@ -1,0 +1,14 @@
+{
+    "include": ["src","types"],
+    "compileOnSave": false,
+    "compilerOptions": {
+        "alwaysStrict": true,
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": true,
+        "baseUrl": "/",
+        "esModuleInterop": true,
+        "checkJs": false,
+    },
+    "exclude": ["node_modules"]
+}
