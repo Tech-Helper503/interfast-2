@@ -9,14 +9,17 @@ import { CacheableResponsePlugin } from "workbox-cacheable-response";
 import * as googleAnalytics from "workbox-google-analytics";
 import { BackgroundSyncPlugin } from "workbox-background-sync";
 
+//Offline Google Analytics
 googleAnalytics.initialize({
   cacheName: "analytics",
 });
 
+// Background Sync
 const bySyncPlugin = new BackgroundSyncPlugin("background-sync", {
   maxRetentionTime: 60 * 24,
 });
 
+// Preloading Navigation
 registerRoute(
   ({ request }) => request.mode === "navigate",
   new NetworkFirst({
@@ -30,6 +33,7 @@ registerRoute(
   })
 );
 
+// Caching for CSS,JS & Service Worker
 registerRoute(
   ({ request }) =>
     request.destination === "style" ||
@@ -47,6 +51,7 @@ registerRoute(
   })
 );
 
+// Image Caching
 registerRoute(
   ({ request }) => request.destination === "image",
   new CacheFirst({
@@ -61,7 +66,8 @@ registerRoute(
   })
 );
 
-const pageFallback = "offline.html";
+// Offline page fallback variable
+const pageFallback = "../offline.html";
 const imageFallback = false;
 const fontFallback = false;
 

@@ -1,0 +1,5 @@
+#html-pointer {
+    user-select: none;
+    visibility: hidden;
+    cursor: none;
+}
