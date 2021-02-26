@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "workbox-background-sync": "./workbox-background-sync.js",
+    "workbox-cacheable-response": "./workbox-cacheable-response.js",
+    "workbox-expiration": "./workbox-expiration.js",
+    "workbox-google-analytics": "./workbox-google-analytics.js",
+    "workbox-routing": "./workbox-routing.js",
+    "workbox-strategies": "./workbox-strategies.js"
+  }
+}
