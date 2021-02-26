@@ -14,5 +14,5 @@ module.exports = {
     plugins: [
         '@snowpack/plugin-dotenv',
         '@snowpack/plugin-typescript'
-    ]
+    ],
 }
