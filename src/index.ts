@@ -1,4 +1,7 @@
 // Register Service Worker
-const worker = new Worker("./sw.js", {
-  type: "module",
-});
+if("serviceWorker" in navigator) {
+    navigator.serviceWorker.register('./sw.js', {
+        type: "module"
+    })
+}
+
