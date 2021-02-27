@@ -1,5 +1,6 @@
 #html-pointer {
     user-select: none;
     visibility: hidden;
-    cursor: none;
+    position: absolute;
+    right: 10000000px;
 }

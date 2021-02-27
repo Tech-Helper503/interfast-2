@@ -81,9 +81,10 @@ self.addEventListener("install", (event) => {
   }
 
   event.waitUntil(
-    self.caches
-      .open("workbox-offline-fallbacks")
-      .then((cache) => cache.addAll(files))
+    async () => {
+        const cache = await self.caches.open("workbox-offline-fallbacks")
+        cache.addAll(files)
+    }
   );
 });
 
