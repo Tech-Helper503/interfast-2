@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build && browserify _dist_/sw.js",
+    "build": "snowpack build && browserify _dist_/sw.js -o sw-c.js",
     "watch-build": "snowpack build --watch"
   },
   "dependencies": {
