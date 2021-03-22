@@ -9,6 +9,7 @@
   "private": true,
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",
+    "@snowpack/plugin-postcss": "^1.2.1",
     "@snowpack/plugin-typescript": "^1.2.1",
     "browserify": "^17.0.0",
     "snowpack": "^3.0.11",
@@ -20,7 +21,10 @@
     "watch-build": "snowpack build --watch"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.5",
     "materialize-css": "^1.0.0",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4",
     "three": "^0.126.0",
     "workbox-background-sync": "^6.1.1",
     "workbox-cacheable-response": "^6.1.1",

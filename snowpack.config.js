@@ -12,7 +12,8 @@ module.exports = {
         src: '/_dist_'
     },
     plugins: [
-        '@snowpack/plugin-dotenv',
-        '@snowpack/plugin-typescript'
+      '@snowpack/plugin-dotenv',
+      '@snowpack/plugin-typescript',
+      '@snowpack/plugin-postcss'
     ],
 }
